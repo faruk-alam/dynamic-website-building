@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynamic data with style using tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow fixed top-0 w-full z-10">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">My Dynamic Data</h1>
+      <button id="loadBtn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        Load More
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-24 max-w-6xl mx-auto px-4">
+    <div id="cardContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Cards will be dynamically added here -->
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
